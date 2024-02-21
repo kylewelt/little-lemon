@@ -1,5 +1,7 @@
+import "./nav.styles.scss";
+
 const Nav = () => (
-  <nav role="navigation">
+  <nav role="navigation" className="nav">
     <ul>
       <li>
         <a href="home">Home</a>

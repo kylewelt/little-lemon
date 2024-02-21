@@ -1,14 +1,12 @@
-import Header from "./components/Header";
-import Nav from "./components/Nav";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
+import Header from "./components/header/header.component";
+import Main from "./components/main/main.component";
+import Footer from "./components/footer/footer.component";
 
-import "./App.css";
+import "./App.scss";
 
 const App = () => (
   <>
     <Header />
-    <Nav />
     <Main />
     <Footer />
   </>
