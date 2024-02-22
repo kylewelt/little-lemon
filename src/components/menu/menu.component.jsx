@@ -1,3 +1,12 @@
-const Menu = () => <div>Menu</div>;
+const Menu = ({ menu }) => (
+  <>
+    <h1>Menu</h1>
+    {menu.map((item, index) => (
+      <p key={index}>
+        {item.name} - {item.price}
+      </p>
+    ))}
+  </>
+);
 
 export default Menu;

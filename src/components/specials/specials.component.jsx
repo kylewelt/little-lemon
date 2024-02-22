@@ -2,37 +2,9 @@ import Button from "../button/button.component";
 import Card from "../card/card.component";
 import DeliveryLink from "../delivery-link/delivery-link.component";
 
-import GreekSalad from "../../assets/greek salad.jpg";
-import Bruschetta from "../../assets/bruchetta.svg";
-import LemonDessert from "../../assets/lemon dessert.jpg";
-
 import "./specials.styles.scss";
 
-const Specials = () => {
-  const specials = [
-    {
-      name: "Greek Salad",
-      price: "$12.99",
-      description:
-        "The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.",
-      image: GreekSalad,
-    },
-    {
-      name: "Bruschetta",
-      price: "$5.99",
-      description:
-        "Our bruschetta is made from grilled bread that has been smashed with garlic and seasoned with salt and olive oil.",
-      image: Bruschetta,
-    },
-    {
-      name: "Lemon Dessert",
-      price: "$5.00",
-      description:
-        "This comes straight from grandma's recipe book, every last ingredient is as authentic as can be imagined.",
-      image: LemonDessert,
-    },
-  ];
-
+const Specials = ({ specials }) => {
   return (
     <div className="specials">
       <div className="specials-header">
