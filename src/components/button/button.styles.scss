@@ -1,0 +1,41 @@
+.button-container {
+  min-width: 12rem;
+  width: auto;
+  height: 3rem;
+  padding: 0 2rem 0 2rem;
+  background-color: #f4ce14;
+  color: #333333;
+  font-weight: bolder;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: #495e57;
+    color: #edefee;
+  }
+
+  .spinner-container {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border: 0.25rem solid #edefee;
+    border-radius: 50%;
+    border-top-color: #333333;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+    @keyframes spin {
+      to {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+    @-webkit-keyframes spin {
+      to {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+  }
+}

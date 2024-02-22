@@ -1,0 +1,18 @@
+.delivery-link {
+  a {
+    font-family: "Karla", sans-serif;
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+  }
+  .link {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 0.85rem;
+      width: 0.85rem;
+      margin-left: 0.5rem;
+    }
+  }
+}

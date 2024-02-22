@@ -1,0 +1,33 @@
+.specials {
+  .specials-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  .specials-items {
+    display: flex;
+    gap: 1rem;
+
+    .special {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+
+      .special-label {
+        display: flex;
+        justify-content: space-between;
+
+        .special-name {
+          font-weight: bold;
+        }
+
+        .special-price {
+          color: #ee9972;
+        }
+      }
+    }
+  }
+}

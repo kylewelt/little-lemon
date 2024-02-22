@@ -1,0 +1,43 @@
+.hero {
+  margin-bottom: 100px;
+
+  h1 {
+    color: #f4ce14;
+    margin: 0;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  h2,
+  p {
+    color: #edefee;
+  }
+
+  .hero-row {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 0;
+    display: flex;
+    background-color: #495e57;
+  }
+
+  .hero-column {
+    width: 100%;
+
+    &.hero-image {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+
+  .hero-image img {
+    position: absolute;
+    width: 250px;
+    height: 275px;
+    border-radius: 1rem;
+    object-fit: cover;
+  }
+}
