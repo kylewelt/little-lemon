@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router-dom";
 
-import Home from "../home/home.component";
-import About from "../about/about.component";
-import Menu from "../menu/menu.component";
-import Reservations from "../reservations/reservations.component";
-import Order from "../order/order.component";
+import HomePage from "../../pages/home-page/home-page.component";
+import AboutPage from "../../pages/about-page/about-page.component";
+import MenuPage from "../../pages/menu-page/menu-page.component";
+import BookingPage from "../../pages/booking-page/booking-page.component";
+import OrderPage from "../../pages/order-page/order-page.component";
 
 import GreekSalad from "../../assets/greek salad.jpg";
 import Bruschetta from "../../assets/bruchetta.svg";
@@ -40,11 +40,11 @@ const Main = () => {
   return (
     <main role="main" className="main">
       <Routes>
-        <Route path="/" element={<Home specials={menu} />}></Route>
-        <Route path="/about" element={<About />}></Route>
-        <Route path="/menu" element={<Menu menu={menu} />}></Route>
-        <Route path="/reservations" element={<Reservations />}></Route>
-        <Route path="/order" element={<Order />}></Route>
+        <Route path="/" element={<HomePage specials={menu} />}></Route>
+        <Route path="/about" element={<AboutPage />}></Route>
+        <Route path="/menu" element={<MenuPage menu={menu} />}></Route>
+        <Route path="/reservations" element={<BookingPage />}></Route>
+        <Route path="/order" element={<OrderPage />}></Route>
       </Routes>
     </main>
   );

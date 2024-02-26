@@ -1,4 +1,4 @@
-const About = () => (
+const AboutPage = () => (
   <>
     <h1>About</h1>
     <p>
@@ -8,4 +8,4 @@ const About = () => (
   </>
 );
 
-export default About;
+export default AboutPage;

@@ -1,4 +1,4 @@
-const Menu = ({ menu }) => (
+const MenuPage = ({ menu }) => (
   <>
     <h1>Menu</h1>
     {menu.map((item, index) => (
@@ -9,4 +9,4 @@ const Menu = ({ menu }) => (
   </>
 );
 
-export default Menu;
+export default MenuPage;
